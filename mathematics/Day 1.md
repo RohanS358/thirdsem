@@ -21,7 +21,7 @@ a) Derive the Cauchy Integral Formula. b) Use the Cauchy Integral Formula to eva
 
 
 
-## [[Notes]]
+## [[Notes 1]]
 
 
 
