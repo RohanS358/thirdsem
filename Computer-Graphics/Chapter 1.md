@@ -49,20 +49,20 @@
 # Random Scan display and Vector Scan Display
 # Difference between Raster Scan Display and Random (Vector) Scan Display
 
-| Base of Difference  | Raster Scan Display | Random (Vector) Scan Display |
-|---------------------|---------------------|------------------------------|
-| **Electron beam**   | The electron beam is swept across the screen one row at a time from top to bottom. | The electron beam is swept to the parts of the screen where a picture is to be drawn. |
-| **Resolution**      | It has lower or poor resolution because picture definition is stored as an intensity value. | It has high resolution because it stores picture definition as a set of line commands. |
-| **Picture definition** | Picture definition is stored as a set of intensity values for all screen points (pixels) in a refresh buffer. | Picture definition is stored as a set of lines in a display list file. |
-| **Realistic display** | The capacity of the system to store intensity values for pixels makes it well suited for realistic display with shadow and color patterns. | These systems are designed for line drawing and can't display realistic shaded scenes. |
-| **Image drawing**   | Screen points or pixels are used to draw an image. | Mathematical functions are used to draw an image. |
-| **Cost**           | They are cheaper than random display. | It is more expensive than raster scan display. |
-| **Refresh rate**    | Refresh rate is 60-80 fps. | All components are drawn 30 to 60 times per second. |
-| **Interlacing**     | It uses interlacing. | It doesn't use interlacing. |
-| **Editing**         | Editing is difficult. | Editing is easy. |
-| **Refresh area**    | Refresh area is independent of picture complexity. | Refresh area depends on complexity of picture. |
-| **Smoothness**      | Produces jagged lines. | Produces smooth lines. |
-| **Example**         | CRT, TV, Printer | Pen Plotter |
+| Base of Difference     | Raster Scan Display                                                                                                                        | Random (Vector) Scan Display                                                           |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| **Electron beam**      | The electron beam is swept across the screen one row at a time from top to bottom.                                                         | The electron beam is swept to the parts of the screen where a picture is to be drawn.  |
+| **Resolution**         | It has lower or poor resolution because picture definition is stored as an intensity value.                                                | It has high resolution because it stores picture definition as a set of line commands. |
+| **Picture definition** | Picture definition is stored as a set of intensity values for all screen points (pixels) in a refresh buffer.                              | Picture definition is stored as a set of lines in a display list file.                 |
+| **Realistic display**  | The capacity of the system to store intensity values for pixels makes it well suited for realistic display with shadow and color patterns. | These systems are designed for line drawing and can't display realistic shaded scenes. |
+| **Image drawing**      | Screen points or pixels are used to draw an image.                                                                                         | Mathematical functions are used to draw an image.                                      |
+| **Cost**               | They are cheaper than random display.                                                                                                      | It is more expensive than raster scan display.                                         |
+| **Refresh rate**       | Refresh rate is 60-80 fps.                                                                                                                 | All components are drawn 30 to 60 times per second.                                    |
+| **Interlacing**        | It uses interlacing.                                                                                                                       | It doesn't use interlacing.                                                            |
+| **Editing**            | Editing is difficult.                                                                                                                      | Editing is easy.                                                                       |
+| **Refresh area**       | Refresh area is independent of picture complexity.                                                                                         | Refresh area depends on complexity of picture.                                         |
+| **Smoothness**         | Produces jagged lines.                                                                                                                     | Produces smooth lines.                                                                 |
+| **Example**            | CRT, TV, Printer                                                                                                                           | Pen Plotter                                                                            |
 # Color CRT monitors
 1. Beam penetration
 2. Shadow mask
