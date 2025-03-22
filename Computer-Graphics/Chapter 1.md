@@ -90,3 +90,67 @@
 ![[250319_08h55m16s_screenshot.png]]
 
 
+## **1. 2D Viewing Pipeline**
+
+The **2D viewing pipeline** transforms a 2D scene from world coordinates to device coordinates (such as a monitor or printer). It consists of the following steps:
+
+### **Steps in the 2D Viewing Pipeline**
+
+1. **World Coordinate System (WCS) Definition**
+    
+    - The user defines objects in world coordinates.
+        
+2. **Windowing (Selection of Viewing Region)**
+    
+    - A **window** (a rectangular region in world space) is chosen to define what part of the scene should be displayed.
+        
+3. **Transform to Normalized Device Coordinates (NDC)**
+    
+    - The window is mapped to a normalized coordinate system, typically ranging from **(0,0) to (1,1)**.
+        
+4. **Viewport Transformation**
+    
+    - The normalized coordinates are scaled and mapped to the viewport, which represents the actual screen display area.
+        
+5. **Clipping**
+    
+    - Objects or parts of objects outside the window are clipped using clipping algorithms (e.g., **Cohen-Sutherland, Liang-Barsky**).
+        
+6. **Device Coordinates and Display**
+    
+    - The final transformed coordinates are mapped onto the output device, such as a monitor.
+## **2. 3D Viewing Pipeline**
+
+The **3D viewing pipeline** extends the 2D pipeline by adding depth and perspective transformations. It is used in 3D graphics applications such as gaming, simulations, and CAD.
+
+### **Steps in the 3D Viewing Pipeline**
+
+1. **Modeling Coordinates (Object Space)**
+    
+    - Objects are defined in their own local coordinate system.
+        
+2. **World Coordinate System (WCS) Transformation**
+    
+    - The objects are positioned in a common 3D world coordinate system.
+        
+3. **Viewing Transformation (Camera Setup)**
+    
+    - A virtual camera (view reference coordinate system) is set up.
+        
+    - **View Volume** (a 3D equivalent of a 2D window) is defined.
+        
+4. **Projection Transformation**
+    
+    - The 3D scene is projected onto a 2D plane.
+        
+    - **Orthographic Projection:** No perspective (parallel projection).
+        
+    - **Perspective Projection:** Objects farther away appear smaller.
+        
+5. **Clipping (3D Clipping Algorithms)**
+    
+    - Objects outside the viewing volume are clipped.
+        
+6. **Viewport Mapping (Normalization & Device Coordinates)**
+    
+	    - The final 2D image is mapped onto the viewport for display.
