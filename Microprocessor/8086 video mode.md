@@ -1,4 +1,6 @@
 
+
+```
 .MODEL SMALL
 
 .STACK 100H
@@ -69,12 +71,10 @@ MAIN ENDP
 
 END MAIN
 
-
-
-
-
+```
 ### 2nd program
 
+```
 .model small
 
 .stack 100h
@@ -220,3 +220,5 @@ main proc
 main endp
 
 end main
+```
+
