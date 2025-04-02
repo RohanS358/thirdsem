@@ -28,4 +28,3 @@ Image-space method
 - Edge table and polygon table are used
 - Active edge list contains all edges in current scan line
 - Surface flags weather a position along a scan line is inside or outside the surface.
-- 
